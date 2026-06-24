@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +22,7 @@ span {
 .navbar {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 20px 0;
-    position: fixed;
+    position: centre;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -287,390 +286,131 @@ span {
 }
 
 
+/* ================= FOOTER ================= */
 
-
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
-footer {
-    background-color: #2f3542;
-    color: #f1f2f6;
+/* ===== FOOTER ===== */
+.footer {
+    padding: 40px 5%;
     text-align: center;
-    padding: 30px;
-    margin-top: 100px;
+    background: #0e1ac6;
+    color: #ffffff;
 }
 
-<style>
-        .sosmed {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .sosmed a {
-            font-size: 40px;
-            margin: 0 15px;
-            color: #333;
-            text-decoration: none;
-            transition: 0.3s;
-             }
-
-        .sosmed a:hover {
-            color: #007bff;
-        }
-  
-    
-
-/* ==========================================================================
-   ANIMASI (CSS KEYFRAMES)
-   ========================================================================== */
-
-/* Efek Memantul Halus pada Tombol */
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-}
-.anim-bounce {
-    animation: bounce 2s infinite;
+.footer h2 {
+    margin-bottom: 10px;
 }
 
-/* Efek Mengapung pada Gambar Hero */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
-}
-.anim-float {
-    animation: float 4s ease-in-out infinite;
+.footer h2 span {
+    color: #ffd700;
 }
 
-/* Efek Muncul Pudar untuk Judul */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-.anim-fade {
-    animation: fadeIn 1s ease-out forwards;
-}
-.anim-fade-delayed {
-    opacity: 0;
-    animation: fadeIn 1s ease-out 0.3s forwards;
+.footer h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
-/* RESPONSIVE DESIGN (Untuk tampilan HP) */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-        margin-top: 100px;
-    }
-    .hero-content {
-        padding-right: 0;
-        margin-top: 30px;
-    }
-    .hero-content h1 {
-        font-size: 32px;
-    }
-    .nav-links {
-        display: none; /* Menyembunyikan menu di HP untuk kesederhanaan tanpa JS */
-    }
-=======
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+
+/* ===== SOCIAL MEDIA ===== */
+.social-media {
+    margin-top: 15px;
 }
 
-body {
-    background-color: #fdfaf6;
-    color: #333;
-    overflow-x: hidden;
-}
-
-span {
-    color: #ff4757; /* Warna merah pedas untuk aksen */
-}
-
-/* ==========================================================================
-   NAVBAR
-   ========================================================================== */
-.navbar {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
-    padding: 0 20px;
-}
 
-.logo {
-    font-size: 30px;
-    font-weight: 900;
-    text-decoration: none;
-    color: #2f3542;
-}
+    width: 55px;
+    height: 55px;
+    margin: 0 10px;
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: #57606f;
-    margin: 0 15px;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-    color: #ff4757;
-}
-
-.btn-kontak {
-    background-color: #ff4757;
-    color: #fff !important;
-    padding: 8px 20px;
-    border-radius: 25px;
-    transition: transform 0.3s, background-color 0.3s !important;
-}
-
-.btn-kontak:hover {
-    background-color: #e84118;
-    transform: translateY(-2px);
-}
-
-/* ==========================================================================
-   HERO SECTION
-   ========================================================================== */
-.hero {
-    max-width: 1200px;
-    margin: 120px auto 60px auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 70vh;
-}
-
-.hero-content {
-    flex: 1;
-    padding-right: 50px;
-}
-
-.hero-content h1 {
-    font-size: 48px;
-    color: #2f3542;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    color: #747d8c;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.btn-primary {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #ffa502;
+    font-size: 22px;
     color: white;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-weight: 600;
-    box-shadow: 0 8px 15px rgba(255, 165, 2, 0.3);
-    transition: all 0.3s ease;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    transition: 0.3s;
 }
 
-.btn-primary:hover {
-    background-color: #ff7f50;
+/* Warna masing-masing */
+.instagram { background: #e1306c; }
+.facebook { background: #1877f2; }
+.twitter  { background: #000000; }
+.tiktok   { background: #111111; }
+
+.social-media a:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: #00ff55;
+    color: #000;
+}
+
+
+/* ===== LOKASI ===== */
+.lokasi {
+    margin-top: 15px;
+}
+
+.lokasi a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    background: #EA4335;
+    color: #ffffff;
+    font-size: 28px;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.lokasi a:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: #d93025;
+}
+
+
+/* ===== WHATSAPP BUTTON ===== */
+.wa-button {
+    display: inline-block;
+    margin-top: 15px;
+
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
+
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.wa-button i {
+    margin-right: 8px;
+}
+
+.wa-button:hover {
+    background: #1ebe5d;
     transform: scale(1.05);
 }
 
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
 
-.hero-image img {
-    max-width: 85%;
-    border-radius: 30px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
+/* ===== COPYRIGHT ===== */
+.copyright {
+    margin-top: 30px;
+    padding-top: 15px;
 
-/* ==========================================================================
-   PRODUK SECTION
-   ========================================================================== */
-.produk-section {
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 0 20px;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-title h2 {
-    font-size: 36px;
-    color: #2f3542;
-}
-
-.section-title p {
-    color: #a4b0be;
-}
-
-.grid-produk {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.card {
-    background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(255, 71, 87, 0.15);
-}
-
-.card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.badge-hot {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background-color: #ff4757;
-    color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.card-info {
-    padding: 25px;
-}
-
-.card-info h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #2f3542;
-}
-
-.card-info p {
     font-size: 14px;
-    color: #747d8c;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    height: 66px; /* Membatasi tinggi teks agar serasi */
-    overflow: hidden;
-}
+    color: #cccccc;
 
-.price-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.harga {
-    font-size: 20px;
-    font-weight: 700;
-    color: #ff4757;
-}
-
-.btn-beli {
-    text-decoration: none;
-    background-color: #2f3542;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 15px;
-    font-size: 14px;
-    font-weight: 600;
-    transition: background-color 0.3s;
-}
-
-.btn-beli:hover {
-    background-color: #ff4757;
-}
-
-/* TESTIMONI STYLING */
-.testimoni-sec {
-    padding: 60px 20px;
-    background-color: #f9f9f9; /* Warna latar belakang soft */
-    text-align: center;
-}
-
-.grid-testimoni {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 40px auto 0 auto;
-}
-
-.card-testi {
-    background: #ffffff;
-    padding: 30px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    border-left: 5px solid #ff4757; /* Memberi aksen warna merah khas makanan pedas */
-    transition: transform 0.3s ease;
-}
-
-.card-testi:hover {
-    transform: translateY(-5px);
-}
-
-.card-testi .komentar {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-.card-testi .nama {
-    font-weight: 600;
-    color: #222;
-    font-size: 0.95rem;
-}
-
-
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
-footer {
-    background-color: #2f3542;
-    color: #f1f2f6;
-    text-align: center;
-    padding: 30px;
-    margin-top: 100px;
+    border-top: 1px solid rgba(255,255,255,0.2);
 }
 
 /* ==========================================================================
@@ -726,5 +466,29 @@ footer {
     .nav-links {
         display: none; /* Menyembunyikan menu di HP untuk kesederhanaan tanpa JS */
     }
->>>>>>> c5245422ddbf12eb64f9369f795f9ded9bddf5ba
+}
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .footer h2{
+        font-size: 28px;
+    }
+
+    .social-icons{
+        gap: 12px;
+    }
+
+    .social-icons a{
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+    .btn-lokasi{
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
 }
