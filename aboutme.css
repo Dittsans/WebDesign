@@ -13,7 +13,7 @@ body {
 }
 
 span {
-    color: #ff4757; /* Warna merah pedas untuk aksen */
+    color: #ce5519; /* Warna merah pedas untuk aksen */
 }
 
 /* ==========================================================================
@@ -22,7 +22,7 @@ span {
 .navbar {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 20px 0;
-    position: fixed;
+    position: centre;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -286,15 +286,131 @@ span {
 }
 
 
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
-footer {
-    background-color: #2f3542;
-    color: #f1f2f6;
+/* ================= FOOTER ================= */
+
+/* ===== FOOTER ===== */
+.footer {
+    padding: 40px 5%;
     text-align: center;
-    padding: 30px;
-    margin-top: 100px;
+    background: #ff0000;
+    color: #ffffff;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer h2 span {
+    color: #ffd700;
+}
+
+.footer h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+/* ===== SOCIAL MEDIA ===== */
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+    margin: 0 10px;
+
+    font-size: 22px;
+    color: white;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+/* Warna masing-masing */
+.instagram { background: #e1306c; }
+.facebook { background: #1877f2; }
+.twitter  { background: #000000; }
+.tiktok   { background: #111111; }
+
+.social-media a:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: #00ff55;
+    color: #000;
+}
+
+
+/* ===== LOKASI ===== */
+.lokasi {
+    margin-top: 15px;
+}
+
+.lokasi a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    background: #EA4335;
+    color: #ffffff;
+    font-size: 28px;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.lokasi a:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: #d93025;
+}
+
+
+/* ===== WHATSAPP BUTTON ===== */
+.wa-button {
+    display: inline-block;
+    margin-top: 15px;
+
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
+
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.wa-button i {
+    margin-right: 8px;
+}
+
+.wa-button:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+
+/* ===== COPYRIGHT ===== */
+.copyright {
+    margin-top: 30px;
+    padding-top: 15px;
+
+    font-size: 14px;
+    color: #cccccc;
+
+    border-top: 1px solid rgba(255,255,255,0.2);
 }
 
 /* ==========================================================================
@@ -350,4 +466,29 @@ footer {
     .nav-links {
         display: none; /* Menyembunyikan menu di HP untuk kesederhanaan tanpa JS */
     }
+}
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .footer h2{
+        font-size: 28px;
+    }
+
+    .social-icons{
+        gap: 12px;
+    }
+
+    .social-icons a{
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+    .btn-lokasi{
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
 }
